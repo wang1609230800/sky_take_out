@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <changeSet id="00000000000001" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_address_book.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000002" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_category.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000003" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_dish.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000004" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_dish_flavor.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000005" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_employee.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000006" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_order_detail.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000007" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_orders.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000008" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_setmeal.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000009" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_setmeal_dish.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000010" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_shopping_cart.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000011" author="YJ">
+        <sqlFile dbms="mysql" endDelimiter=";" encoding="UTF-8" path="liquibase/data/init_user.sql"/>
+    </changeSet>
+
+
+</databaseChangeLog>
